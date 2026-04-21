@@ -1,0 +1,18 @@
+inputSet:
+  name: is
+  identifier: is
+  orgIdentifier: default
+  projectIdentifier: gh
+  pipeline:
+    identifier: Code
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: main
+    variables:
+      - name: input_variable
+        type: String
+        value: test
