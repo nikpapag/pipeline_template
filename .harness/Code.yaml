@@ -37,7 +37,10 @@ pipeline:
                   identifier: Run_1
                   spec:
                     shell: Sh
-                    command: echo "hello"
+                    command: |-
+                      echo "hello"
+
+                      echo <+trigger.branch>
   variables:
     - name: input_variable
       type: String
